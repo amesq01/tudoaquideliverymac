@@ -15,8 +15,6 @@ export default function App() {
       style={{
         flex: 1,
         backgroundColor: 'white',
-
-        //paddingTop: Platform.OS === 'ios' && !iPhone ? getStatusBarHeight() : 0,
         paddingBottom: Platform.OS === 'ios' ? getBottomSpace() : 0,
       }}>
       <HeaderIphoneX />
