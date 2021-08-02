@@ -17,6 +17,8 @@ import Icon from 'react-native-vector-icons/FontAwesome5';
 export function Login() {
   const [color, SetColor] = useState(true);
 
+  //const hamburguer = {{uri:'https://blog.eduk.com.br/wp-content/uploads/2016/08/hamburguer_shutterstock.jpg'}};
+
   return (
     <View style={{flex: 1, backgroundColor: 'white'}}>
       <View
@@ -28,12 +30,7 @@ export function Login() {
           alignItems: 'center',
           paddingHorizontal: 10,
         }}>
-        <Image
-          source={{
-            uri: 'https://img2.gratispng.com/20180628/zaz/kisspng-computer-icons-hamburger-button-menu-new-menu-5b34724be5a1f0.5796308115301637879406.jpg',
-          }}
-          style={{width: 40, height: 40, borderRadius: 50}}
-        />
+        <Icon name="bars" size={30} color="white" />
         <Text style={{color: 'white', fontSize: 24, fontWeight: 'bold'}}>
           Tudo Aqui Delivery
         </Text>
@@ -95,8 +92,8 @@ export function Login() {
       />
       <ScrollView
         contentContainerStyle={{
-          flex: 1,
-
+          paddingBottom:30
+       
         }}>
         <View
           style={{
@@ -111,7 +108,7 @@ export function Login() {
               backgroundColor: color ? 'purple' : 'rgba(0,0,0, 0.4)',
               padding: 10,
               borderRadius: 5,
-              width: '40%',
+              width: '30%',
               flexDirection: 'row',
               justifyContent: 'center',
               alignItems: 'center',
@@ -138,7 +135,7 @@ export function Login() {
               padding: 10,
               borderRadius: 5,
               flexDirection: 'row',
-              width: '45%',
+              width: '30%',
               justifyContent: 'center',
               alignItems: 'center',
             }}
@@ -156,9 +153,645 @@ export function Login() {
           </TouchableOpacity>
           {/* BOTAO RECEBA */}
         </View>
-        <View></View>
+
+        <View style={{height: 250, marginTop: 10}}>
+          <ScrollView
+            horizontal
+            style={{}}
+            showsHorizontalScrollIndicator={false}>
+            {/* View de Cada Item */}
+
+            <View
+              style={{
+                width: 150,
+                borderWidth: StyleSheet.hairlineWidth,
+                borderRadius: 3,
+                marginLeft: 20,
+              }}>
+              <View
+                style={{
+                  flex: 1,
+                  padding: 0,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}>
+                <Image
+                  style={{width: '100%', height: '100%'}}
+                  source={{
+                    uri: 'https://blog.eduk.com.br/wp-content/uploads/2016/08/hamburguer_shutterstock.jpg',
+                  }}
+                  resizeMode="contain"
+                />
+              </View>
+              <View style={{flex: 1.5}}>
+                <View
+                  style={{
+                    padding: 5,
+                    flex: 1,
+                    justifyContent: 'space-between',
+                  }}>
+                  <Text style={{fontWeight: 'bold'}}>
+                    Big Burguer Bacon com Fritas
+                  </Text>
+                  <Text style={{fontSize: 12, color: 'gray'}}>
+                    2 Carnes, Pão, Queijo, Bacon, Alface, Tomates, Batata Fritas
+                  </Text>
+                </View>
+                <View
+                  style={{
+                    padding: 10,
+                    justifyContent: 'center',
+                    alignItems: 'flex-end',
+                  }}>
+                  <Text style={{fontSize: 16, fontWeight: 'bold'}}>
+                    R$ 10,00
+                  </Text>
+                </View>
+              </View>
+            </View>
+            {/* View de Cada Item */}
+
+            {/* View de Cada Item */}
+
+            <View
+              style={{
+                width: 150,
+                borderWidth: StyleSheet.hairlineWidth,
+                borderRadius: 3,
+                marginLeft: 20,
+              }}>
+              <View
+                style={{
+                  flex: 1,
+                  padding: 0,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}>
+                <Image
+                  style={{width: '100%', height: '100%'}}
+                  source={{
+                    uri: 'https://blog.eduk.com.br/wp-content/uploads/2016/08/hamburguer_shutterstock.jpg',
+                  }}
+                  resizeMode="contain"
+                />
+              </View>
+              <View style={{flex: 1.5}}>
+                <View
+                  style={{
+                    padding: 5,
+                    flex: 1,
+                    justifyContent: 'space-between',
+                  }}>
+                  <Text style={{fontWeight: 'bold'}}>
+                    Big Burguer Bacon com Fritas
+                  </Text>
+                  <Text style={{fontSize: 12, color: 'gray'}}>
+                    2 Carnes, Pão, Queijo, Bacon, Alface, Tomates, Batata Fritas
+                  </Text>
+                </View>
+                <View
+                  style={{
+                    padding: 10,
+                    justifyContent: 'center',
+                    alignItems: 'flex-end',
+                  }}>
+                  <Text style={{fontSize: 16, fontWeight: 'bold'}}>
+                    R$ 10,00
+                  </Text>
+                </View>
+              </View>
+            </View>
+            {/* View de Cada Item */}
+
+            {/* View de Cada Item */}
+
+            <View
+              style={{
+                width: 150,
+                borderWidth: StyleSheet.hairlineWidth,
+                borderRadius: 3,
+                marginLeft: 20,
+              }}>
+              <View
+                style={{
+                  flex: 1,
+                  padding: 0,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}>
+                <Image
+                  style={{width: '100%', height: '100%'}}
+                  source={{
+                    uri: 'https://blog.eduk.com.br/wp-content/uploads/2016/08/hamburguer_shutterstock.jpg',
+                  }}
+                  resizeMode="contain"
+                />
+              </View>
+              <View style={{flex: 1.5}}>
+                <View
+                  style={{
+                    padding: 5,
+                    flex: 1,
+                    justifyContent: 'space-between',
+                  }}>
+                  <Text style={{fontWeight: 'bold'}}>
+                    Big Burguer Bacon com Fritas
+                  </Text>
+                  <Text style={{fontSize: 12, color: 'gray'}}>
+                    2 Carnes, Pão, Queijo, Bacon, Alface, Tomates, Batata Fritas
+                  </Text>
+                </View>
+                <View
+                  style={{
+                    padding: 10,
+                    justifyContent: 'center',
+                    alignItems: 'flex-end',
+                  }}>
+                  <Text style={{fontSize: 16, fontWeight: 'bold'}}>
+                    R$ 10,00
+                  </Text>
+                </View>
+              </View>
+            </View>
+            {/* View de Cada Item */}
+
+            {/* View de Cada Item */}
+
+            <View
+              style={{
+                width: 150,
+                borderWidth: StyleSheet.hairlineWidth,
+                borderRadius: 3,
+                marginLeft: 20,
+              }}>
+              <View
+                style={{
+                  flex: 1,
+                  padding: 0,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}>
+                <Image
+                  style={{width: '100%', height: '100%'}}
+                  source={{
+                    uri: 'https://blog.eduk.com.br/wp-content/uploads/2016/08/hamburguer_shutterstock.jpg',
+                  }}
+                  resizeMode="contain"
+                />
+              </View>
+              <View style={{flex: 1.5}}>
+                <View
+                  style={{
+                    padding: 5,
+                    flex: 1,
+                    justifyContent: 'space-between',
+                  }}>
+                  <Text style={{fontWeight: 'bold'}}>
+                    Big Burguer Bacon com Fritas
+                  </Text>
+                  <Text style={{fontSize: 12, color: 'gray'}}>
+                    2 Carnes, Pão, Queijo, Bacon, Alface, Tomates, Batata Fritas
+                  </Text>
+                </View>
+                <View
+                  style={{
+                    padding: 10,
+                    justifyContent: 'center',
+                    alignItems: 'flex-end',
+                  }}>
+                  <Text style={{fontSize: 16, fontWeight: 'bold'}}>
+                    R$ 10,00
+                  </Text>
+                </View>
+              </View>
+            </View>
+            {/* View de Cada Item */}
+
+            {/* View de Cada Item */}
+
+            <View
+              style={{
+                width: 150,
+                borderWidth: StyleSheet.hairlineWidth,
+                borderRadius: 3,
+                marginLeft: 20,
+              }}>
+              <View
+                style={{
+                  flex: 1,
+                  padding: 0,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}>
+                <Image
+                  style={{width: '100%', height: '100%'}}
+                  source={{
+                    uri: 'https://blog.eduk.com.br/wp-content/uploads/2016/08/hamburguer_shutterstock.jpg',
+                  }}
+                  resizeMode="contain"
+                />
+              </View>
+              <View style={{flex: 1.5}}>
+                <View
+                  style={{
+                    padding: 5,
+                    flex: 1,
+                    justifyContent: 'space-between',
+                  }}>
+                  <Text style={{fontWeight: 'bold'}}>
+                    Big Burguer Bacon com Fritas
+                  </Text>
+                  <Text style={{fontSize: 12, color: 'gray'}}>
+                    2 Carnes, Pão, Queijo, Bacon, Alface, Tomates, Batata Fritas
+                  </Text>
+                </View>
+                <View
+                  style={{
+                    padding: 10,
+                    justifyContent: 'center',
+                    alignItems: 'flex-end',
+                  }}>
+                  <Text style={{fontSize: 16, fontWeight: 'bold'}}>
+                    R$ 10,00
+                  </Text>
+                </View>
+              </View>
+            </View>
+            {/* View de Cada Item */}
+          </ScrollView>
+        </View>
+
+        <View
+          style={{
+            height: 110,
+            marginTop: 20,
+
+            width: '100%',
+          }}>
+          <ScrollView
+            horizontal
+            style={{flex: 1}}
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={{}}>
+            <View
+              style={{
+                marginHorizontal: 20,
+                borderRadius: 5,
+                width: 300,
+                justifyContent: 'center',
+                alignItems: 'center',
+                backgroundColor:'green'
+              }}>
+              <Text>Hello testando testando</Text>
+            </View>
+
+            <View
+              style={{
+                backgroundColor: 'green',
+
+                borderRadius: 5,
+                width: 300,
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <Text>Hello testando testando</Text>
+            </View>
+
+            <View
+              style={{
+                backgroundColor: 'green',
+                marginHorizontal: 20,
+                borderRadius: 5,
+                width: 300,
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <Text>Hello testando testando</Text>
+            </View>
+          </ScrollView>
+        </View>
+
+        <View style={{height: 250, marginTop: 10}}>
+          <ScrollView
+            horizontal
+            style={{}}
+            showsHorizontalScrollIndicator={false}>
+            {/* View de Cada Item */}
+
+            <View
+              style={{
+                width: 150,
+                borderWidth: StyleSheet.hairlineWidth,
+                borderRadius: 3,
+                marginLeft: 20,
+              }}>
+              <View
+                style={{
+                  flex: 1,
+                  padding: 0,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}>
+                <Image
+                  style={{width: '100%', height: '100%'}}
+                  source={{
+                    uri: 'https://blog.eduk.com.br/wp-content/uploads/2016/08/hamburguer_shutterstock.jpg',
+                  }}
+                  resizeMode="contain"
+                />
+              </View>
+              <View style={{flex: 1.5}}>
+                <View
+                  style={{
+                    padding: 5,
+                    flex: 1,
+                    justifyContent: 'space-between',
+                  }}>
+                  <Text style={{fontWeight: 'bold'}}>
+                    Big Burguer Bacon com Fritas
+                  </Text>
+                  <Text style={{fontSize: 12, color: 'gray'}}>
+                    2 Carnes, Pão, Queijo, Bacon, Alface, Tomates, Batata Fritas
+                  </Text>
+                </View>
+                <View
+                  style={{
+                    padding: 10,
+                    justifyContent: 'center',
+                    alignItems: 'flex-end',
+                  }}>
+                  <Text style={{fontSize: 16, fontWeight: 'bold'}}>
+                    R$ 10,00
+                  </Text>
+                </View>
+              </View>
+            </View>
+            {/* View de Cada Item */}
+
+            {/* View de Cada Item */}
+
+            <View
+              style={{
+                width: 150,
+                borderWidth: StyleSheet.hairlineWidth,
+                borderRadius: 3,
+                marginLeft: 20,
+              }}>
+              <View
+                style={{
+                  flex: 1,
+                  padding: 0,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}>
+                <Image
+                  style={{width: '100%', height: '100%'}}
+                  source={{
+                    uri: 'https://blog.eduk.com.br/wp-content/uploads/2016/08/hamburguer_shutterstock.jpg',
+                  }}
+                  resizeMode="contain"
+                />
+              </View>
+              <View style={{flex: 1.5}}>
+                <View
+                  style={{
+                    padding: 5,
+                    flex: 1,
+                    justifyContent: 'space-between',
+                  }}>
+                  <Text style={{fontWeight: 'bold'}}>
+                    Big Burguer Bacon com Fritas
+                  </Text>
+                  <Text style={{fontSize: 12, color: 'gray'}}>
+                    2 Carnes, Pão, Queijo, Bacon, Alface, Tomates, Batata Fritas
+                  </Text>
+                </View>
+                <View
+                  style={{
+                    padding: 10,
+                    justifyContent: 'center',
+                    alignItems: 'flex-end',
+                  }}>
+                  <Text style={{fontSize: 16, fontWeight: 'bold'}}>
+                    R$ 10,00
+                  </Text>
+                </View>
+              </View>
+            </View>
+            {/* View de Cada Item */}
+
+            {/* View de Cada Item */}
+
+            <View
+              style={{
+                width: 150,
+                borderWidth: StyleSheet.hairlineWidth,
+                borderRadius: 3,
+                marginLeft: 20,
+              }}>
+              <View
+                style={{
+                  flex: 1,
+                  padding: 0,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}>
+                <Image
+                  style={{width: '100%', height: '100%'}}
+                  source={{
+                    uri: 'https://blog.eduk.com.br/wp-content/uploads/2016/08/hamburguer_shutterstock.jpg',
+                  }}
+                  resizeMode="contain"
+                />
+              </View>
+              <View style={{flex: 1.5}}>
+                <View
+                  style={{
+                    padding: 5,
+                    flex: 1,
+                    justifyContent: 'space-between',
+                  }}>
+                  <Text style={{fontWeight: 'bold'}}>
+                    Big Burguer Bacon com Fritas
+                  </Text>
+                  <Text style={{fontSize: 12, color: 'gray'}}>
+                    2 Carnes, Pão, Queijo, Bacon, Alface, Tomates, Batata Fritas
+                  </Text>
+                </View>
+                <View
+                  style={{
+                    padding: 10,
+                    justifyContent: 'center',
+                    alignItems: 'flex-end',
+                  }}>
+                  <Text style={{fontSize: 16, fontWeight: 'bold'}}>
+                    R$ 10,00
+                  </Text>
+                </View>
+              </View>
+            </View>
+            {/* View de Cada Item */}
+
+            {/* View de Cada Item */}
+
+            <View
+              style={{
+                width: 150,
+                borderWidth: StyleSheet.hairlineWidth,
+                borderRadius: 3,
+                marginLeft: 20,
+              }}>
+              <View
+                style={{
+                  flex: 1,
+                  padding: 0,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}>
+                <Image
+                  style={{width: '100%', height: '100%'}}
+                  source={{
+                    uri: 'https://blog.eduk.com.br/wp-content/uploads/2016/08/hamburguer_shutterstock.jpg',
+                  }}
+                  resizeMode="contain"
+                />
+              </View>
+              <View style={{flex: 1.5}}>
+                <View
+                  style={{
+                    padding: 5,
+                    flex: 1,
+                    justifyContent: 'space-between',
+                  }}>
+                  <Text style={{fontWeight: 'bold'}}>
+                    Big Burguer Bacon com Fritas
+                  </Text>
+                  <Text style={{fontSize: 12, color: 'gray'}}>
+                    2 Carnes, Pão, Queijo, Bacon, Alface, Tomates, Batata Fritas
+                  </Text>
+                </View>
+                <View
+                  style={{
+                    padding: 10,
+                    justifyContent: 'center',
+                    alignItems: 'flex-end',
+                  }}>
+                  <Text style={{fontSize: 16, fontWeight: 'bold'}}>
+                    R$ 10,00
+                  </Text>
+                </View>
+              </View>
+            </View>
+            {/* View de Cada Item */}
+
+            {/* View de Cada Item */}
+
+            <View
+              style={{
+                width: 150,
+                borderWidth: StyleSheet.hairlineWidth,
+                borderRadius: 3,
+                marginLeft: 20,
+              }}>
+              <View
+                style={{
+                  flex: 1,
+                  padding: 0,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}>
+                <Image
+                  style={{width: '100%', height: '100%'}}
+                  source={{
+                    uri: 'https://blog.eduk.com.br/wp-content/uploads/2016/08/hamburguer_shutterstock.jpg',
+                  }}
+                  resizeMode="contain"
+                />
+              </View>
+              <View style={{flex: 1.5}}>
+                <View
+                  style={{
+                    padding: 5,
+                    flex: 1,
+                    justifyContent: 'space-between',
+                  }}>
+                  <Text style={{fontWeight: 'bold'}}>
+                    Big Burguer Bacon com Fritas
+                  </Text>
+                  <Text style={{fontSize: 12, color: 'gray'}}>
+                    2 Carnes, Pão, Queijo, Bacon, Alface, Tomates, Batata Fritas
+                  </Text>
+                </View>
+                <View
+                  style={{
+                    padding: 10,
+                    justifyContent: 'center',
+                    alignItems: 'flex-end',
+                  }}>
+                  <Text style={{fontSize: 16, fontWeight: 'bold'}}>
+                    R$ 10,00
+                  </Text>
+                </View>
+              </View>
+            </View>
+            {/* View de Cada Item */}
+          </ScrollView>
+        </View>
+
+        <View
+          style={{
+            height: 110,
+            marginTop: 20,
+
+            width: '100%',
+          }}>
+          <ScrollView
+            horizontal
+            style={{flex: 1}}
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={{}}>
+            <View
+              style={{
+                marginHorizontal: 20,
+                borderRadius: 5,
+                width: 300,
+                justifyContent: 'center',
+                alignItems: 'center',
+                backgroundColor:'green'
+              }}>
+              <Text>Hello testando testando</Text>
+            </View>
+
+            <View
+              style={{
+                backgroundColor: 'green',
+
+                borderRadius: 5,
+                width: 300,
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <Text>Hello testando testando</Text>
+            </View>
+
+            <View
+              style={{
+                backgroundColor: 'green',
+                marginHorizontal: 20,
+                borderRadius: 5,
+                width: 300,
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <Text>Hello testando testando</Text>
+            </View>
+          </ScrollView>
+        </View>
+        
       </ScrollView>
-      <View style={{height:45}}></View>
+      <View style={{height:45, backgroundColor:'#c6c6c6'}}>
+
+      </View>
     </View>
   );
 }
